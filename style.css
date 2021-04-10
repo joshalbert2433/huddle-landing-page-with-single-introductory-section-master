@@ -1,0 +1,144 @@
+:root {
+    --violet:hsl(257, 40%, 49%) ;
+    --magenta-soft: hsl(300, 69%, 71%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    /* font-size: .5rem; */
+    /* height: 100%; */
+    color: white;
+}
+body {
+    background-image: url("./images/bg-desktop.svg");
+    background-size: 90% 100%;
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-color: var(--violet);
+    /* width: minmax(1440px, auto); */
+
+}
+
+h1{
+    font-size: 2.6rem;
+    line-height: 1.5em;
+}
+
+p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: 2rem;
+    font-weight: 100;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.content-container {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+
+}
+
+
+.box-a {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    height: 90vh;
+    padding: 5rem;
+    min-width: 375px;
+}
+
+
+.box-a a{
+   /* flex-basis: 100%; */
+    /* display: block;
+    width: 100%; */
+    /* margin-right: 57rem; */
+    margin-bottom: 3rem;
+    display: inline-block
+    /* height: 10px; */
+}
+
+.box-a a img {
+    height: auto;
+    width: 14rem;
+}
+
+.content-img {
+    height: 40rem;
+    /* width: 10rem; */
+    /* width: 50rem; */
+}
+
+.box-b {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    height: 90vh;
+    padding: 5rem 5rem 5rem 0;
+    min-width: 375px;
+
+}
+
+.box-b a {
+    display: inline-block;
+    margin-right: auto;
+    padding: 1rem 4rem;
+    /* background-color: var(--magenta-soft); */
+    background: white;
+    border-radius: 30px;
+    text-decoration: none;
+    color: var(--violet);
+    margin-top: 1.8rem;
+}
+
+.box-b a:hover {
+    background: var(--magenta-soft);
+    color: white;
+}
+
+.box-bottom {
+    display: flex;
+    height: 10vh;
+    justify-content: flex-end;
+    align-items: center;
+    /* margin: auto 0; */
+    margin-right: 3rem;
+    margin-bottom: 2rem;
+}
+
+.box-item  {
+    font-size: 1.2rem;
+    /* background: var(--violet); */
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 1rem;
+    padding: .4rem .6rem;
+    margin-bottom: 3rem;
+    /* color: white; */
+    fill: white;
+}
+
+.box-item:hover,
+.box-item:hover i{
+    border-color: var(--magenta-soft);
+    color: var(--magenta-soft);
+}
+
+.box-item:nth-of-type() {
+    margin-right: 3rem;
+}
+
+.box-item i {
+    color: white;
+}
